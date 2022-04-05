@@ -6,7 +6,8 @@ public class SwitchRotation : MonoBehaviour
 {
     public void IsOn()
     {
-        transform.Rotate(0, 0, 450);
+        //transform.rotation = new Quaternion(0, 0, 450, 0); // may be better 
+        transform.Rotate(0, 0, 450); // it adds this amount to the current rotation 
     }
 
     public void IsOff()
