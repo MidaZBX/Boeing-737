@@ -6,12 +6,11 @@ public class SwitchRotation : MonoBehaviour
 {
     public void IsOn()
     {
-        //transform.rotation = new Quaternion(0, 0, 450, 0); // may be better 
-        transform.Rotate(0, 0, 450); // it adds this amount to the current rotation 
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y, 90);
     }
 
     public void IsOff()
     {
-        transform.Rotate(0, 0, 270);
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 270);
     }
 }

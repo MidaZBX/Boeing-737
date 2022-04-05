@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interaction : MonoBehaviour
+public class Interaction1 : MonoBehaviour
 {
-    SwitchRotation switchRotation;
+    SwitchRotation1 switchRotation1;
     MeshRenderer meshRenderer;
     [SerializeField]
-    public bool isTurnedOn;
+    public bool isTurnedOn1;
 
     private void Awake()
     {
-        switchRotation = GetComponent<SwitchRotation>();
+        switchRotation1 = GetComponent<SwitchRotation1>();
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
@@ -23,22 +23,21 @@ public class Interaction : MonoBehaviour
 
     public void HoverExited()
     {
-        meshRenderer.material.color = Color.red;
+        meshRenderer.material.color = Color.black;
     }
 
     // Rotates the button 
     public void IsActivated()
     {
-        switchRotation.IsOn();
-        if (gameObject.CompareTag("correctButton"))
+        switchRotation1.IsOn();
+        if (gameObject.tag == "correctButton1")
         {
-            isTurnedOn = true;
+            isTurnedOn1 = true;
         }
     }
 
     public void IsDeactivated()
     {
-        switchRotation.IsOff();
-        isTurnedOn = false;
+        switchRotation1.IsOff();
     }
 }
