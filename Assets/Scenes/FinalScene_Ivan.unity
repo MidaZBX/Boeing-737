@@ -915,10 +915,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 176266788}
+        m_TargetAssemblyTypeName: Interaction, Assembly-CSharp
+        m_MethodName: HoverEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 176266788}
+        m_TargetAssemblyTypeName: Interaction, Assembly-CSharp
+        m_MethodName: HoverExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -933,10 +957,34 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 176266788}
+        m_TargetAssemblyTypeName: Interaction, Assembly-CSharp
+        m_MethodName: IsActivated
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 176266788}
+        m_TargetAssemblyTypeName: Interaction, Assembly-CSharp
+        m_MethodName: IsDeactivated
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -964,6 +1012,43 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &176266788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176266786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e607fb2cc5082bc47bb3fac530df5c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &176266789
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176266786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.514197, y: 4.039401, z: 5.941727}
+  m_Center: {x: -0.8179132, y: 0.00416112, z: -0.5481933}
+--- !u!114 &176266790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176266786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20aba9c7efb22564597db98b5a865b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &185152429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7085,22 +7170,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c12579db77f73f347bd24023cd93e9cb,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5902497
+      value: 0.59025526
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c12579db77f73f347bd24023cd93e9cb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.38935402
+      value: -0.38935685
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c12579db77f73f347bd24023cd93e9cb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.38936073
+      value: 0.38935685
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c12579db77f73f347bd24023cd93e9cb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5902601
+      value: 0.59025526
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c12579db77f73f347bd24023cd93e9cb,
         type: 3}
@@ -7115,7 +7200,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c12579db77f73f347bd24023cd93e9cb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 270.001
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c12579db77f73f347bd24023cd93e9cb,
         type: 3}

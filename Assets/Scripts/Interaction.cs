@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    SwitchRotation switchRotation;
+    MeshRenderer meshRenderer;
+
+    private void Awake()
     {
-        
+        switchRotation = GetComponent<SwitchRotation>();
+        meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    // Highlight the button to show that it is interactable
+    public void HoverEntered()
     {
-        
+        meshRenderer.material.color = Color.blue;
+    }
+
+    public void HoverExited()
+    {
+        meshRenderer.material.color = Color.red;
+    }
+
+    // Rotates the button 
+    public void IsActivated()
+    {
+        switchRotation.IsOn();
+    }
+
+    public void IsDeactivated()
+    {
+        switchRotation.IsOff();
     }
 }

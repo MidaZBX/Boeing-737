@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class SwitchRotation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void IsOn()
     {
-        
+        transform.Rotate(0, 0, 450);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void IsOff()
     {
-        
+        transform.Rotate(0, 0, 270);
     }
 }
