@@ -39,6 +39,9 @@ public class Interaction : MonoBehaviour
     public void IsDeactivated()
     {
         switchRotation.IsOff();
-        isTurnedOn = false;
+        if (gameObject.CompareTag("correctButton"))
+        {
+            isTurnedOn = false;
+        }
     }
 }

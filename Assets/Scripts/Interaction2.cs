@@ -40,5 +40,9 @@ public class Interaction2 : MonoBehaviour
     public void IsDeactivated()
     {
         switchRotation2.IsOff();
+        if (gameObject.tag == "correctButton2")
+        {
+            isTurnedOn2 = false;
+        }
     }
 }
