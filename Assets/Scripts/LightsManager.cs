@@ -52,7 +52,7 @@ public class LightsManager : MonoBehaviour
     {
         if (button.GetComponent<Interaction>().isTurnedOn && button1.GetComponent<Interaction1>().isTurnedOn1 && button2.GetComponent<Interaction2>().isTurnedOn2)
         {
-            Debug.Log("You have taken off successfully!");
+            Debug.Log("You have taken off successfully!"); // Replace with SceneManager.LoadScene();
             //SceneManager.LoadScene();
         }
     }
