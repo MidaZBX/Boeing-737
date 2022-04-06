@@ -9380,6 +9380,7 @@ MonoBehaviour:
   button: {fileID: 2113543039}
   button1: {fileID: 687532700}
   button2: {fileID: 401026840}
+  correct: {fileID: 8300000, guid: 725e099c95d42cf419991dbf4fda6d7e, type: 3}
   lights:
   - {fileID: 1323119394}
   - {fileID: 1214794256}
