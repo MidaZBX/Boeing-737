@@ -6,11 +6,11 @@ public class SwitchRotation : MonoBehaviour
 {
     public void IsOn()
     {
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y, 90);
+        transform.eulerAngles = new Vector3(-114,-180, 90);
     }
 
     public void IsOff()
     {
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 270);
+        transform.eulerAngles = new Vector3(-114, -180, 270);
     }
 }
